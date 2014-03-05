@@ -81,6 +81,9 @@
 					success:  function(data){
 						if(!data.current_observation) {
 							$("p.error").text("Please be more specific");
+							$("h1").text("");
+							$("h2").text("");
+							$("h3").text("");
 
 							return false;
 						}
@@ -193,6 +196,7 @@
 					$("h1").addClass("show");
 					$("h2").addClass("show");
 					$("h3").addClass("show");
+					$("p.error").text("");
 				});
 		
 		}); // end doc ready
