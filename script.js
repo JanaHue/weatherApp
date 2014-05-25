@@ -9,7 +9,8 @@
 				dataType  :  "jsonp",
 				success  :  function(data){
 					if(!data.current_observation) {
-						$("p.error").text("Please be more specific");
+						$("p.error").addClass("show");
+						$("p.error").text('Please be super specific, ie. "Toronto, Canada"');
 						$("h1").text("");
 						$("h2").text("");
 						$("h3").text("");
@@ -72,7 +73,7 @@
 
 					if (wind < 40 && temp > 3 && temp <= 18 && (precip == 0 || precip == "--")) {
 						console.log('6.5');
-						mainText = "It's moderate outside"
+						mainText = "It's moderate today"
 						subText = "sneakers and a light coat"
 						subSubText = "Today is going to be a very good day"
 					};
@@ -94,7 +95,7 @@
 					if (uv > 2) {
 						console.log(uv);
 						sunscreen = "Yikes! That UV index is extreme. Don't forget your sunscreen!";
-						$(".overlay").fadeIn(200);
+						$(".overlay").fadeIn(100);
 
 					};
 
@@ -128,7 +129,7 @@
 				$("h1").addClass("show");
 				$("h2").addClass("show");
 				$("h3").addClass("show");
-				$("p.error").text("");
+				$("p.error").removeClass("show");
 			});
 	
 	}); // end doc ready

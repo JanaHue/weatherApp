@@ -25,7 +25,7 @@ body{
 	padding: 10%;
 }
 
-.show {
+.show, p.error.show {
 	display: block;
 }
 
@@ -36,6 +36,7 @@ body{
 	border-radius: 2px;
 	margin: 0 auto;
 }
+
 h1, h2, h3, p {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, 'Oxygen', sans-serif;
 	font-weight: 500;
@@ -43,7 +44,7 @@ h1, h2, h3, p {
 h1, h2, h3, p.error{
 	display: none;
 }
-h3 {
+h3, p.error {
 	margin-bottom: 0;
 }
 form {
@@ -93,10 +94,10 @@ input[type="submit"] {
 	background: rgba(0,0,0,0.2);
 	padding: 12%;
 	.modal {
-		padding: 20px;
+		padding: 40px 20px;
 		position: relative;
 		max-width: 560px;
-		height: 225px;
+		height: 200px;
 		background: white;
 		margin: 0 auto;
 		border-radius: 3px;
@@ -113,3 +114,24 @@ input[type="submit"] {
 		}
 	}
 }
+
+@media (max-width: 600px){
+	body {
+		padding: 5%;
+	}
+	input[type="text"] {
+		float: none;
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		width: auto;
+		float: none;
+		color:white;
+		margin-top: 2%;
+		margin-left: 0;
+	}
+	form.result {
+		margin-top: 5px;
+	}
+} 
