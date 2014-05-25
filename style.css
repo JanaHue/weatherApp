@@ -276,7 +276,7 @@ input[type="submit"]:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.9);
   padding: 12%;
 }
 .overlay .modal {
@@ -287,8 +287,8 @@ input[type="submit"]:focus {
   background: white;
   margin: 0 auto;
   border-radius: 3px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  border: 3px solid #fdf092;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid #ff7f74;
 }
 .overlay .modal p.alert {
   font-size: 24px;
@@ -316,6 +316,10 @@ input[type="submit"]:focus {
     color: white;
     margin-top: 2%;
     margin-left: 0;
+  }
+
+  .overlay {
+    padding: 8%;
   }
 
   form.result {
