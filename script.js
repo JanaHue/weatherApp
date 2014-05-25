@@ -124,6 +124,7 @@
 				e.preventDefault();
 				var city = $("input[type=text]").val();
 				grabWeather(city);
+				$("form").addClass("result");
 				$("h1").addClass("show");
 				$("h2").addClass("show");
 				$("h3").addClass("show");
